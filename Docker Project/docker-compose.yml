@@ -11,7 +11,7 @@ services:
       dockerfile: Dockerfile.dev
       context: .
     ports:
-      - "9191:9191"
+      - "3000:3000"
     volumes:
       - "/usr/app/node_modules"
       - ".:/usr/app"  
@@ -21,4 +21,4 @@ services:
       - "POSTGRES_USERNAME=postgres"
       - "POSTGRES_PASSWORD=postgres_password"
       - "POSTGRES_DB=simple_blog_api"
-      - "PORT=9191"
+      - "PORT=3000"
